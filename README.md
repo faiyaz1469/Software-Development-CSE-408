@@ -1,8 +1,8 @@
-#Software-Development-CSE-408 
+# Software-Development-CSE-408 
 
 This is the software development course CSE 408 of BUET,CSE in L-4,T-1
 
-##commands to run the application
+## commands to run the application
 
 ## run the following command on terminal to check java version
 
