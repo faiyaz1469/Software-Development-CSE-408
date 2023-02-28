@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<!-- head -->
+<div th:replace="../fragments/head">This content will be gone</div>
+
+<body class="container parent">
+
+  <!-- navbar -->
+  <div th:replace="../fragments/navbar">This content will be gone</div>
+  
+  <main class="main">
+  <h1 class="display-6 text-success p-2">Tour List</h1>
+
+    <!--========== body ===========-->
+<!-- Page Content -->
+<div class="container">
+
+
+    <form action="#" 
+          th:action="@{/tours/new}" 
+          th:object="${tour}" 
+          class="mx-auto w-50 p-5 shadow bg-light rounded form-horizontal" 
+          method="POST">
+  
+      <fieldset>
+      
+        <!-- Form Name -->
+        <legend>Tour Creation Form</legend>
+        
+        <!-- Text input-->
+        <div class="form-group mb-4">
+          <label class="col-md-4 control-label" for="title">Title</label>  
+          <input id="title" name="title" type="text" placeholder="Title" class="form-control input-md" th:field="*{title}">
+        </div>
+        
+        <!-- Textarea -->
+        <div class="form-group mb-4">
+          <label class="col-md-4 control-label" for="description">Description</label>                  
+          <textarea class="form-control" id="description" name="description" th:field="*{description}"></textarea>
+  
+        </div>
+        
+        <!-- Text input-->
+        <div class="form-group mb-4">
+          <label class="col-md-4 control-label" for="startDate">Start Date</label>
+          <input id="startDate" name="startDate" type="date" placeholder="Start Date" th:field="*{startDate}" class="form-control input-md">
+        </div>
+        
+        <!-- Text input-->
+        <div class="form-group mb-4">
+          <label class="col-md-4 control-label" for="textarea">End Date</label>
+          <input id="endDate" name="endDate" type="date" placeholder="End Date" th:field="*{endDate}" class="form-control input-md">
+        </div>
+  
+        <!-- Text input-->
+        <div class="form-group mb-4">
+          <label class="col-md-4 control-label" for="capacity">Capacity</label>
+          <input id="capacity" name="capacity" type="text" placeholder="Capacity" th:field="*{capacity}" class="form-control input-md">
+        </div>
+        
+        <!-- Text input-->
+        <div class="form-group mb-4">
+          <label class="col-md-4 control-label" for="cost">Cost</label>
+          <input id="cost" name="cost" type="text" placeholder="Cost" th:field="*{cost}" class="form-control input-md">
+        </div>
+  
+        <!-- Text input-->
+        <div class="form-group mb-4">
+          <label class="col-md-4 control-label" for="type">Image</label>  
+          <input id="image" name="image" type="text" placeholder="Image URL" class="form-control input-md" th:field="*{image}">
+        </div>
+  
+        
+        <!-- Multiple Checkboxes -->
+        <!-- <div class="form-group">
+          <label class="col-md-4 control-label" for="checkboxes">Participation Access</label>
+          <div class="col-md-4">
+          <div class="checkbox">
+            <label for="checkboxes-0">
+              <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+              Paid
+            </label>
+            </div>
+          <div class="checkbox">
+            <label for="checkboxes-1">
+              <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
+              Invite only
+            </label>
+          </div>
+          <div class="checkbox">
+            <label for="checkboxes-2">
+              <input type="checkbox" name="checkboxes" id="checkboxes-2" value="3">
+              Open
+            </label>
+          </div>
+          </div>
+        </div> -->
+        
+        <!-- Select Basic -->
+        <!-- <div class="form-group">
+          <label class="col-md-4 control-label" for="selectbasic">Payment Method</label>
+          <div class="col-md-4">
+            <select id="selectbasic" name="selectbasic" class="form-control">
+              <option value="1">In advance</option>
+              <option value="2">At door</option>
+              <option value="3">Both</option>
+            </select>
+          </div>
+        </div> -->
+      
+      </fieldset>
+  
+      <div class="form-group mb-4">
+        <button type="submit" class="btn btn-sm btn-danger btn-block form-control">Create</button>
+      </div>
+  
+      <div>
+        <p>Back To <a href="#" th:href="@{/}">Main</a></p>
+      </div>
+  
+    </form>
+      
+  
+  </div>
+  <!-- /.container -->
+
+  </main>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

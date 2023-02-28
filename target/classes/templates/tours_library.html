@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<!--========== head ===========-->
+<div th:replace="../fragments/head">This content will be gone</div>
+
+
+<!--========== Main Body ===========-->
+<body class="container parent">
+	<!--========== navbar ===========-->
+	<div th:replace="../fragments/navbar">This content will be gone</div>
+
+	<main class="main">
+		<section class="main-section">
+			
+			<section class="block-5">
+				<div class="block-5-title">
+					<h4><span>BLOGS</span></h4>
+				</div>
+				<h1 class="display-6 text-primary p-2">Feedback of Travellers</h1>
+
+                <div class="row">
+  
+                    <div class="col col-sm-2 col-md-3 col-lg-4 mb-4 h-25">
+                        <div class="card">
+                            <!--img src="https://bootdey.com/img/Content/avatar/avatar7.png"  width="300" height="200" class="card-img-top" alt="Hollywood Sign on The Hill"/-->
+                            
+                            <div class="card-body">
+                            <h5 class="card-title" >A Moonlit Night in Saint Martin</h5>
+                            <p class="card-text" > Faiyaz Rashid Nabil</p>
+                            <p class="card-text" >
+                                St. Martin`s island is a beautiful coral island in Bangladesh under Teknaf upazila, Cox's Bazar, Chittagong, Bangladesh.
+                                Overnight staying in St. Martins Island is really an exotic feeling where you will feel and listen the sound of Sea. 
+                                If you are lucky then you can spend the exotic moonlit night at St. Martins Island. The beauty of Full moon in St. Martins 
+                                Island cannot be expressed, if you are not there at that time.
+                            </p>
+                            
+                            </div>
+
+                            <div class="card-footer">
+                            <small class="text-muted" >8 min read</small>
+                            </div>
+
+                        </div>
+                    </div>
+                
+                    <div class="col col-sm-2 col-md-3 col-lg-4 mb-4 h-25">
+                        <div class="card">
+                            <!--img src="https://bootdey.com/img/Content/avatar/avatar6.png" width="300" height="200" class="card-img-top" alt="Hollywood Sign on The Hill"/-->
+                            
+                            <div class="card-body">
+                            <h5 class="card-title" >A Tremendous Experience in Bogalake</h5>
+                            <p class="card-text" > Sayem Al Hasan</p>
+                            <p class="card-text" >
+                                BogaLake is a wonderful natural lake known for its scenic beauty, 65km from Bandarban and 20 km from Ruma Thana. 
+                                This overnight trip involves a two hour drive to Painkhyongchori, a boat journey to Ruma bazaar and a five hour 
+                                trek to BogaLake. Your local guide will arrange the overnight stay and all meals. You will need to carry a 
+                                sleeping bag along with your essentials.
+                            </p>
+                            
+                            </div>
+
+                            <div class="card-footer">
+                            <small class="text-muted" >5 min read</small>
+                            </div>
+
+                        </div>
+                    </div>
+                
+                    <div class="col col-sm-2 col-md-3 col-lg-4 mb-4 h-25">
+                      
+
+                    </div>
+
+                    <!--div>
+                        <p>More <a href="#" th:href="@{/blogs}">Blogs</a>Here</p>
+                    </div-->
+
+                    
+                
+                    <!--div class="col col-sm-2 col-md-3 col-lg-4 mb-4 h-25">
+                      <a href="#">
+                            <img class="img-fluid card" width="400" height="300" src="https://photos.nomadicnotes.com/img/s/v-3/p2759081374-4.jpg" alt="">
+                          </a>
+                    </div-->
+                
+                  </div>
+
+                  <h1 class="display-6 text-primary p-2">More Blogs <a href="#" th:href="@{/blogs}">Here</a></h1>
+
+                    <!--div>
+                        <p>Want to give a feedback? Click <a href="#" th:href="@{/blogs/new}">Here</a></p>
+                    </div-->
+
+                    <h1 class="display-6 text-primary p-2">Want to give a feedback? Click <a href="#" th:href="@{/blogs/new}">Here</a></h1>
+			
+			</section>
+
+            <section class="block-3">
+				<div class="block-3-title">
+					<h4><span>TOUR MEMORABILIA</span></h4>
+				</div>
+				
+				<div class="block-3a">
+					<div class="block-3a-content">
+						<img src="../images/saintmartin.jpg" >
+					</div>
+					<div class="block-3a-headline">
+						<p>Exploring Saint Martin Coral Island</p>
+					</div>
+				</div>
+				<div class="block-3b">
+					<div class="block-3b-content">
+						<img src="../images/bogalake.jpg" >
+					</div>
+					<div class="block-3b-headline">
+						<p>Hiking Bogalake</p>
+					</div>
+				</div>
+				<div class="block-3c">
+					<div class="block-3c-content">
+						<img src="../images/kaptai-1.jpg" >
+					</div>
+					<div class="block-3c-headline">
+						<p>Boat Trip in Kaptai Lake</p>
+					</div>
+				</div>
+				
+				<div class="block-3d">
+					<div class="block-3d-content">
+						<img src="../images/tlabongbypiash.jpg" >
+					</div>
+					<div class="block-3d-headline">
+						<p>Exploring Tlabong Waterfall</p>
+					</div>
+					
+				</div>
+				<div class="block-3e">
+					<div class="block-3e-content">
+						<img src="../images/sundarban.jpg" >
+					</div>
+					<div class="block-3e-headline">
+						<p>Sundarban Safari</p>
+					</div>
+				</div>
+				<div class="block-3f">
+					<div class="block-3f-content">
+						<img src="../images/teknaf.jpg" >
+					</div>
+					<div class="block-3f-headline">
+						<p>Walking In Inani Beach</p>
+					</div>
+				</div>
+                <div class="block-3g">
+					<div class="block-3g-content">
+						<img src="../images/madhobkunda.jpg">
+					</div>
+					<div class="block-3g-headline">
+						<p>Exploring Madhobkunda Waterfall</p>
+					</div>
+					
+				</div>
+				<div class="block-3h">
+					<div class="block-3h-content">
+						<img src="../images/monsoon.jpg" >
+					</div>
+					<div class="block-3h-headline">
+						<p>Bandarban Safari</p>
+					</div>
+				</div>
+				<div class="block-3i">
+					<div class="block-3i-content">
+						<img src="../images/shatgombuj.jpg" >
+					</div>
+					<div class="block-3i-headline">
+						<p>Inside Shat Gombuj Mosque</p>
+					</div>
+				</div>
+				
+				
+			</section>
+
+
+		</section>
+
+	</main>
+
+	<!--========== Footer ===========-->
+	<div th:replace="../fragments/footer">This content will be gone</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
