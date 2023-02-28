@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<!-- head -->
+<div th:replace="../fragments/head">This content will be gone</div>
+
+<body class="container parent">
+
+  <!-- navbar -->
+  <div th:replace="../fragments/navbar">This content will be gone</div>
+  
+  <main class="main">
+    <h1 class="display-6 text-success">Featured</h1>
+    <!--article class="forecast"-->
+        <!--h1>Saint Martin Island</h1-->
+        <article class="day-forecast">
+            <h2>Saint Martin Island</h2>
+            <p>Saint Martin Island (Bengali: সেন্টমার্টিন দ্বীপ) is a small island (area only 3 km2) in the northeastern part of the Bay of Bengal, about 9 km south of the tip of the Cox's Bazar-Teknaf peninsula, and forming the southernmost part of Bangladesh. 
+                There is a small adjoining island that is separated at high tide, called Chera Dwip. It is about 8 kilometres (5 miles) west of the northwest coast of Myanmar, at the mouth of the Naf River.
+                Millennia ago, the island used to be an extension of the Teknaf peninsula, but at a later time some portion of this peninsula got submerged and thus the southernmost part of the aforementioned peninsula became an island, 
+                and was disconnected from the Bangladesh mainland. The first settlement started 250 years ago, in 18th century, by Arabian merchants who named the island 'Jazira'. During British occupation the island was named after the 
+                then Deputy Commissioner of Chittagong Mr. Martin as St. Martin Island. Likely because one or more of the Arabs were Saint and whose name could not be identified. Local names of the island are "Narikel jinjira" which means 'Coconut Island', and "Daruchini Dwip" 
+                which means "Cinnamon island". It is the only coral island in Bangladesh.</p>
+        </article>
+        <article class="day-forecast">
+            <h3>How to Go There</h3>
+            <p>The only way to reach Saint Martin Island is by water transportation: boats and ships (mostly for tourists) from Cox Bazar and Teknaf. It is the southernmost union of Bangladesh situated in 120 km away from the Cox's Bazar city.
+                The only internal transport for island is non motorized van (pulled by man.) The roads are made of concrete, and their condition are decent. All most hotels run generators until 11 PM which are not allowed afterwards, so they 
+                then rely on solar power, which is popular throughout the island. There is no electricity supply from the national
+                 grid since a hurricane in 1991.</p>
+        </article>
+        <!--article class="day-forecast">
+            <h2>05 March 2018</h2>
+            <p>Heavy rain.</p>
+        </article-->
+    <!--/article-->
+    
+    <h4 class="display-6 text-success">Gallery</h4>
+  
+    <div class="row">
+  
+      <div class="col col-sm-2 col-md-3 col-lg-4 mb-4 h-25 g-4">
+        <a href="#">
+              <img class="img-fluid card" width="400" height="300" src="https://upload.wikimedia.org/wikipedia/commons/0/06/Saint_Martin1.jpg" alt="">
+            </a>
+      </div>
+  
+      <div class="col col-sm-2 col-md-3 col-lg-4 mb-4 h-25 g-4">
+        <a href="#">
+              <img class="img-fluid card" width="400" height="300" src="https://upload.wikimedia.org/wikipedia/commons/2/29/Coconut_garden_Saint_Martins_Island.jpg" alt="">
+            </a>
+      </div>
+  
+      <div class="col col-sm-2 col-md-3 col-lg-4 mb-4 h-25 g-4">
+        <a href="#">
+              <img class="img-fluid card" width="400" height="300" src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Sunset_at_Saint_Martin.jpg" alt="">
+            </a>
+      </div>
+
+    </div>
+
+    <!--h4 class="my-4">Upcoming Tour To Saint Martin</h3-->
+
+        <div class="row">
+            <div class="col col-md">
+              <h1 class="display-6 text-success">Upcoming Tour To St. Martin</h1>
+              <hr>
+              <div class="">
+                <table class="shadow-sm table table-striped table-bordered table-hover">
+                  <thead class="table-dark">
+                    <tr>
+                      <th>Id</th>
+                      <th>Title</th>
+                      <th>Description</th>
+                      <th>Start Date</th>
+                      <th>End Date</th>
+                      <th>Capacity</th>
+                      <th>Cost</th>
+                      <th>Options</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!--tr th:each="tour: ${tours}">
+                      <td th:text="${tour.id}"></td>
+                      <td th:text="${tour.title}"></td>
+                      <td th:text="${tour.description}"></td>
+                      <td th:text="${tour.startDate}"></td>
+                      <td th:text="${tour.endDate}"></td>
+                      <td th:text="${tour.capacity}"></td>
+                      <td th:text="${tour.cost}"></td>
+                      <td>
+                        <a class="btn btn-sm btn-danger d-inline" th:href="@{/tours/{id}(id=${tour.id})}">Book</a>
+                        <a class="btn btn-sm btn-info d-inline" th:href="@{/tours/{id}(id=${tour.id})}">Follow</a>
+                      </td>
+                    </tr-->
+
+                     <tr>
+                      <td >173</td>
+                      <td >Saint Martin I</td>
+                      <td >Saint Martin Tour</td>
+                      <td >14-02-2023</td>
+                      <td >18-02-2023</td>
+                      <td >20</td>
+                      <td >7000</td>
+                      <td>
+                        <a class="btn btn-sm btn-danger d-inline" >Book</a>
+                        <a class="btn btn-sm btn-info d-inline" >Follow</a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                        <td >179</td>
+                        <td >Saint Martin II</td>
+                        <td >Saint Martin Tour</td>
+                        <td >22-02-2023</td>
+                        <td >25-02-2023</td>
+                        <td >15</td>
+                        <td >6500</td>
+                        <td>
+                          <a class="btn btn-sm btn-danger d-inline" >Book</a>
+                          <a class="btn btn-sm btn-info d-inline" >Follow</a>
+                        </td>
+                      </tr>
+
+                  </tbody>
+                </table>
+              </div>
+    
+          </div>
+
+  </main>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

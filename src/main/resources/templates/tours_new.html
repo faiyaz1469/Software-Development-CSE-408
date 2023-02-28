@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<!--========== head ===========-->
+<div th:replace="../fragments/head">This content will be gone</div>
+
+<!--========== body ===========-->
+<body class="container parent">
+    <div th:replace="../fragments/navbar">This content will be gone</div>
+
+    <main class="main">
+
+      <div class="row">
+        <div class="col col-md">
+          <h1 class="display-6 text-success">Upcoming Tour List</h1>
+          <hr>
+          <div class="">
+            <table class="shadow-sm table table-striped table-bordered table-hover">
+              <thead class="table-dark">
+                <tr>
+                  <th>Id</th>
+                  <th>Title</th>
+                  <th>Description</th>
+                  <th>Start Date</th>
+                  <th>End Date</th>
+                  <th>Capacity</th>
+                  <th>Cost</th>
+                  <th>Options</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr th:each="tour: ${tours}">
+                  <td th:text="${tour.id}"></td>
+                  <td th:text="${tour.title}"></td>
+                  <td th:text="${tour.description}"></td>
+                  <td th:text="${tour.startDate}"></td>
+                  <td th:text="${tour.endDate}"></td>
+                  <td th:text="${tour.capacity}"></td>
+                  <td th:text="${tour.cost}"></td>
+                  <td>
+                    <a class="btn btn-sm btn-danger d-inline" th:href="@{/tours/{id}(id=${tour.id})}">Book</a>
+                    <a class="btn btn-sm btn-info d-inline" th:href="@{/tours/{id}(id=${tour.id})}">Follow</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+      </div>
+    <main>
+
+      <!--========== Footer ===========-->
+      <!--div th:replace="../fragments/footer">This content will be gone</div-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

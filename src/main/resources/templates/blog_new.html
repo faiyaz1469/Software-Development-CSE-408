@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<!-- head -->
+<div th:replace="../fragments/head">This content will be gone</div>
+
+<body class="container parent">
+
+  <!-- navbar -->
+  <div th:replace="../fragments/navbar">This content will be gone</div>
+  
+  <main class="main">
+  <h1 class="display-6 text-success p-2">Give Your Feedback</h1>
+
+    <!--========== body ===========-->
+<!-- Page Content -->
+<div class="container">
+
+
+    <form action="#" 
+          th:action="@{/blogs/new}" 
+          th:object="${blog}" 
+          class="mx-auto w-50 p-5 shadow bg-light rounded form-horizontal" 
+          method="POST">
+  
+      <fieldset>
+      
+        <!-- Form Name -->
+        <legend>Feedback Form</legend>
+
+       
+        <div class="form-group mb-4">
+            <label class="col-md-4 control-label" for="name">Name</label>  
+            <input id="name" name="name" type="text" placeholder="Name" class="form-control input-md" th:field="*{name}">
+          </div>
+        
+        
+        <!-- Text input-->
+        <div class="form-group mb-4">
+            <label class="col-md-4 control-label" for="title">Title</label>  
+            <input id="title" name="title" type="text" placeholder="Title" class="form-control input-md" th:field="*{title}">
+          </div>
+        
+    
+        <div class="form-group mb-4">
+          <label class="col-md-4 control-label" for="description">Description</label>                  
+          <textarea class="form-control" id="description" name="description" th:field="*{description}"></textarea>
+  
+        </div>
+      
+      </fieldset>
+  
+      <div class="form-group mb-4">
+        <button type="submit" class="btn btn-sm btn-danger btn-block form-control">Submit</button>
+      </div>
+  
+      <div>
+        <p>Back to Tour <a href="#" th:href="@{/tours/library}">Library</a></p>
+      </div>
+  
+    </form>
+      
+  
+  </div>
+  <!-- /.container -->
+
+  </main>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

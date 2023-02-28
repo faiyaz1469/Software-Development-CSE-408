@@ -1,0 +1,89 @@
+<!--========== head ===========-->
+<div th:replace="../fragments/head">This content will be gone</div>
+
+<!--========== body ===========-->
+<!-- Page Content -->
+<div class="container">
+  <div th:replace="../fragments/navbar">This content will be gone</div>
+
+  <main class="main">
+    <!-- Portfolio Item Heading -->
+    <h1 class="my-4" th:text="${tour.title}"></h1>
+  
+    <!-- Portfolio Item Row -->
+    <div class="row">
+  
+      <div class="col-md-8">
+        <img class="img-fluid card" src="https://youimg1.tripcdn.com/target/0ww5v120006p5083v197E_C_640_320_R5_Q70.jpg_.webp?proc=source%2Ftrip" th:src="${tour.image}" width="750" height="400" alt="">
+      </div>
+  
+      <div class="col-md-4">
+        <h3 class="my-3">Description</h3>
+        <p th:text="${tour.description}">Tour Description</p>
+        <h3 class="my-3">Tour Details</h3>
+        <ul>
+          <li th:text="'Start Date: ' + ${tour.startDate}">Start Date</li>
+          <li th:text="'End Date: ' + ${tour.endDate}">End Date</li>
+          <li th:text="'Capacity: ' + ${tour.capacity}">Capacity</li>
+          <li th:text="'Cost: ' + ${tour.cost}">Cost</li>
+        </ul>
+
+        <!--li sec:authorize="hasRole('ROLE_ADMIN')" class="bg-warning">
+					<a href="" th:href="@{/travellers}" class="btn btn-success">Enroll</a>
+				</li-->
+  
+        <a href="" sec:authorize = "hasRole('ROLE_ADMIN')" th:href="@{/travellers}" class="btn btn-success">Enrolled</a>
+        <!--a href="" th:href="@{/travellers/book}" class="btn btn-warning">Book</-->
+        <a href="" th:href="@{/tours/book/{id}(id=${tour.id})}" class="btn btn-warning">Book</a>
+        <!--a href="" th:href="@{/tours/book}" class="btn btn-warning">BookId2</a-->
+        
+      </div>
+  
+    </div>
+    <!-- /.row -->
+  
+    <!-- Related Projects Row -->
+    <h3 class="my-4">Gallery</h3>
+  
+    <div class="row">
+  
+      <div class="col col-sm-2 col-md-3 col-lg-4 mb-4 h-25">
+        <a href="#">
+              <img class="img-fluid card" width="300" height="300" src="https://travelvibe.net/wp-content/uploads/2021/03/jaflong-ultimate-travelers-guide-e1615265613510.jpg" alt="">
+            </a>
+      </div>
+  
+      <div class="col col-sm-2 col-md-3 col-lg-4 mb-4 h-25">
+        <a href="#">
+              <img class="img-fluid card" width="300" height="200" src="https://photos.nomadicnotes.com/img/s/v-3/p2759081374-4.jpg" alt="">
+            </a>
+      </div>
+  
+      <div class="col col-sm-2 col-md-3 col-lg-4 mb-4 h-25">
+        <a href="#">
+              <img class="img-fluid card" width="330" height="200" src="../images/solo.png" alt="">
+            </a>
+      </div>
+  
+      <!--div class="col col-sm-2 col-md-3 col-lg-4 mb-4 h-25">
+        <a href="#">
+              <img class="img-fluid card" width="400" height="300" src="https://photos.nomadicnotes.com/img/s/v-3/p2759081374-4.jpg" alt="">
+            </a>
+      </div-->
+  
+    </div>
+    <!-- /.row -->
+  
+  </div>
+  <!-- /.container -->
+
+  </main>
+
+
+    <!--========== Footer ===========-->
+    <div th:replace="../fragments/footer">This content will be gone</div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
