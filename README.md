@@ -18,8 +18,8 @@ This is the software development course CSE 408 of BUET,CSE Dept.
 
 ## if maven not installed on system then run the following command (unix)
 
-    ./mvnw spring-boot:run
-    #Or simply ./run.sh 
+    ./mvnw spring-boot:run 
+    or ./run.sh 
 
 ## if maven not installed on system then run the following command (windows)
 
