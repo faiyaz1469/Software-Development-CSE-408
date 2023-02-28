@@ -1,6 +1,6 @@
 # Software-Development-CSE-408 
 
-This is the software development course CSE 408 of BUET,CSE Dept.
+This is the software development course CSE 408 of BUET,CSE Dept
 
 # commands to run the application
 
