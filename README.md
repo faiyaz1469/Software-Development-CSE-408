@@ -1,6 +1,6 @@
 # Software-Development-CSE-408 
 
-This is the software development course CSE 408 of BUET,CSE Dept
+    This is the software development course CSE 408 of BUET,CSE Dept
 
 # Project Proposal
 
@@ -8,30 +8,30 @@ This is the software development course CSE 408 of BUET,CSE Dept
 
 ## frameworks and tools used
 
-    - Backend
+    Backend
         - SpringBoot
         - Spring Data JPA
         - Spring Security
     
-    - Frontend
+    Frontend
         - HTML, CSS
         - Thymeleaf (Template Engine)
     
-    - Database
+    Database
         - MySQL
 
 ## Project Features
 
-● Authentication - Registration, Login
-● Places - Featured, Popular
-● Upcoming Tour - Tour List, Tour Description, Book Tour
-● Customized Tour - FnF Tour, Corporate Tour, Solo Tour, Couple Tour
-● Tour Library - Reviews, Blogs, Memorabilia
+    ● Authentication - Registration, Login
+    ● Places - Featured, Popular
+    ● Upcoming Tour - Tour List, Tour Description, Book Tour
+    ● Customized Tour - FnF Tour, Corporate Tour, Solo Tour, Couple Tour
+    ● Tour Library - Reviews, Blogs, Memorabilia
 
 # Video Demonstration
 
-Part 1 - https://drive.google.com/file/d/1_pJiZlv4Tt7-h9PQhRTweg46XEwT1P87/view?usp=share_link
-Part 2 - https://drive.google.com/file/d/1C5GVAqU12Ez25CV4DEDGXNh1CBFnMfLz/view?usp=share_link
+    Part 1 - https://drive.google.com/file/d/1_pJiZlv4Tt7-h9PQhRTweg46XEwT1P87/view?usp=share_link
+    Part 2 - https://drive.google.com/file/d/1C5GVAqU12Ez25CV4DEDGXNh1CBFnMfLz/view?usp=share_link
 
 # commands to run the application
 
