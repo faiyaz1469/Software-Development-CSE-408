@@ -2,11 +2,11 @@
 
     This is the software development course CSE 408 of BUET,CSE Dept
 
-# Project Proposal
+## Project Proposal
 
     https://drive.google.com/file/d/1CLkDjwxAmZoFXSVsaCoaXFLDcg7xgs1s/view?usp=share_link
 
-## frameworks and tools used
+## Frameworks and Tools Used
 
     Backend
         - SpringBoot
