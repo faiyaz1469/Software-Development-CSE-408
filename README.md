@@ -4,13 +4,21 @@ This is the software development course CSE 408 of BUET,CSE Dept
 
 # Project Proposal
 
-https://drive.google.com/file/d/1CLkDjwxAmZoFXSVsaCoaXFLDcg7xgs1s/view?usp=share_link
+    https://drive.google.com/file/d/1CLkDjwxAmZoFXSVsaCoaXFLDcg7xgs1s/view?usp=share_link
 
-## Frameworks and Tools Used
+## frameworks and tools used
 
-Backend - SpringBoot, Spring Data JPA
-Frontend - Thymeleaf, HTML, CSS
-Database - MySQL
+    - Backend
+        - SpringBoot
+        - Spring Data JPA
+        - Spring Security
+    
+    - Frontend
+        - HTML, CSS
+        - Thymeleaf (Template Engine)
+    
+    - Database
+        - MySQL
 
 ## Project Features
 
