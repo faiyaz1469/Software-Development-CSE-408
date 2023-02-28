@@ -19,6 +19,7 @@ This is the software development course CSE 408 of BUET,CSE Dept.
 ## if maven not installed on system then run the following command (unix)
 
     ./mvnw spring-boot:run
+    #Or simply ./run.sh 
 
 ## if maven not installed on system then run the following command (windows)
 
@@ -28,15 +29,4 @@ This is the software development course CSE 408 of BUET,CSE Dept.
 
     localhost:8080
 
-## working http urls
 
-    localhost:8080/tours
-    localhost:8080/tours/list
-    localhost:8080/tours/id
-    localhost:8080/places/
-    localhost:8080/places/list
-    localhost:8080/places/id
-    localhost:8080/login
-    localhost:8080/logout
-    localhost:8080/user
-    localhost:8080/admin
